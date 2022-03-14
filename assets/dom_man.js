@@ -11,6 +11,7 @@ let cashHistory = "";
 
 // Manipulate DOM
 submitButtonEl.click(function(){
+
     
     if (expOrIncomeEl.val() !==  "Select" && enteredAmountEl.val() >= 1){
         let expOrInc = expOrIncomeEl.val()
@@ -28,9 +29,11 @@ submitButtonEl.click(function(){
         } else if (expOrInc === "Income"){
             theTotal += Number(enteredAmountEl.val())
             currentBalEl.text( theTotal )
-            cashHistory = `<option>${expOrInc} + ${enteredAmountEl.val()} </option>`
+            cashHistory = 
+                `<option>${expOrInc} + ${enteredAmountEl.val()} </option>`
             viewTransHistory.append(cashHistory)
 
         }
-    } else{alert("Enter a positive amount and select whether income or expense")}
+    } 
+    else{alert("Enter a positive amount and select whether income or expense")}
 })

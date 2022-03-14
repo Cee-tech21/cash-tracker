@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash tracker application</title>
+    <link rel="stylesheet" href="./assets/bootstrap_5_1/css/bootstrap.min.css">
+</head>
+<body class=" " style="background-image: url(./assets/images/calculator_coins.jpg);
+                background-repeat: no-repeat; background-size: cover;">
+    
+    <main class="min-vh-100 d-flex align-items-center">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 me-auto 
+                       mt-2  mt-sm-0">                    
+                    <form action="" class="bg-white d-flex 
+                            flex-column rounded p-3 mt-auto mb-auto">
+                        <h1 class="mt-4">Cash tracker app</h1>
+                        <label for="email" class="mt-2 text-muted py-3">
+                            Enter amount
+                            <input type="number" placeholder="2000"
+                                class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-3"
+                                id="entered-amount">
+                        </label>
+
+                        <div class="text-muted">
+                            <label > Select expense or income </label>
+                            <select class="mt-2 text-muted py-3 px-3 w-100" 
+                                    id="exp-inc">
+                                <option
+                                    class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-1">
+                                    Select
+                                </option>
+                                
+                                <option
+                                    class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-1">
+                                    Expense
+                                </option>
+                                <option
+                                    class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-1">
+                                    Income
+                                </option>
+                            </select>                            
+
+                        </div>
+                        <button type="button" class="btn btn-lg bg-dark text-white mt-3 py-3
+                            rounded rounded-2 border-0" id="submit-btn">
+                            Submit </button>
+                        
+                        <div class=" text-white mb-5 py-1">
+                           <h1 class=" pb-1 visually-hidden">hello </h1> 
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6 me-auto 
+                    mt-2 mt-sm-0 mb-3">                    
+                    <aside action="" class="bg-white d-flex 
+                            flex-column rounded p-3 mt-auto mb-auto">
+                        <h1 class="mt-4" >Your current balance:</h1>
+                        <h2 class="text-md-center" id="current-bal">0.00  </h2>
+                        <label class="mt-1"> 
+                        <select class="mt-2 text-muted py-3 w-100" id="trans-history">
+                            
+                            <option
+                                class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-3">
+                                View transaction history
+                            </option>
+                            
+                        </select>
+                        </label>
+                        
+                        
+                        <div class=" text-white mb-5 py-1">
+                           <h1 class=" pb-1 visually-hidden">hello </h1> 
+                        </div>
+                    </aside>
+
+
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./assets/jquery-3.6.0.min.js"></script>
+
+    <script src="./assets/bootstrap_5_1/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dom_man.js"></script>
+</body>
+</html>

@@ -41,5 +41,6 @@ submitButtonEl.click(function(){
 
         }
     } 
-    else{alert("Enter a positive amount and select whether income or expense")}
+    else{swal("Enter a positive amount. Select if \
+                transaction is income or expense")}
 })

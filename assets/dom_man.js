@@ -2,7 +2,7 @@
 let enteredAmountEl = $("#entered-amount")
 let expOrIncomeEl = $("#exp-inc")
 let submitButtonEl = $("#submit-btn")
-let viewTransHistory = $("#trans-history")
+//let viewTransHistory = $("#trans-history")
 let transHistDiv = $("#tranz-hist")
 let currentBalEl = $("#current-bal")
 
@@ -27,14 +27,14 @@ submitButtonEl.click(function(){
 
             transHist = `<p class="bg-light py-2 px-2">
                     ${expOrInc} - ${enteredAmountEl.val()} </p>`
-            viewTransHistory.append(cashHistory)
+            //viewTransHistory.append(cashHistory)
             transHistDiv.append(transHist)
 
         } else if (expOrInc === "Income"){
             theTotal += Number(enteredAmountEl.val())
             currentBalEl.text( theTotal )
             
-            viewTransHistory.append(cashHistory)
+            //viewTransHistory.append(cashHistory)
             transHist = `<p class="bg-light py-2 px-2">
                     ${expOrInc} + ${enteredAmountEl.val()} </p>`
             transHistDiv.append(transHist)
